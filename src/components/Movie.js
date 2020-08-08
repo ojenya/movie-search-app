@@ -1,7 +1,7 @@
 import React from "react";
 
 const DEFAULT_PLACEHOLDER_IMAGE =
-  "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg";
+  "https://galwayliving.ca/wp-content/uploads/2018/06/300px-No_image_available.svg_.png";
 
 
 const Movie = ({ movie }) => {

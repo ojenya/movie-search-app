@@ -5,9 +5,9 @@ import Movie from "./Movie";
 import Search from "./Search";
 
 
-const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
+const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=b74c7362";
 
-
+// http://www.omdbapi.com/?i=tt3896198&apikey=b74c7362
 const initialState = {
   loading: true,
   movies: [],
@@ -63,7 +63,7 @@ const App = () => {
       	type: "SEARCH_MOVIES_REQUEST"
     	});
 	
-        fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
+        fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=b74c7362`)
       	.then(response => response.json())
       	.then(jsonResponse => {
         	if (jsonResponse.Response === "True") {
@@ -86,10 +86,10 @@ const App = () => {
     <div className="App">
       <Header text="A movie search app with React Hooks" />
       <Search search={search} />
-      <div className="App-intro">Фильмы получены с помощью <a href="http://www.omdbapi.com/apikey.aspx">OMDb API</a></div>
-      <div className="movies">
+      <div className="App-intro">Фильмы получены с помощью <a href="http://www.omdbapi.com/apikey.aspx">OMDb API</a>, поэтому русский язык не поддерживается.</div>
+      <div className="movies loader">
         {loading && !errorMessage ? (
-          <span>loading... </span>
+          <span className="loading">loading... </span>
         ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
         ) : (
