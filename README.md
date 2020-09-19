@@ -1,4 +1,4 @@
-
+# Movie search app 
 <a href="https://search-omdb.herokuapp.com/"><img src="https://raw.githubusercontent.com/ojenya/movie-search-app/master/public/img-1.png" title="Поиск фильмов" alt="Поиск фильмов"></a>
 
 App.js — это родительский компонент для остальных 3. Он также будет содержать функцию, которая обрабатывает и вызывает запрос API во время первоначального рендеринга компонента.
