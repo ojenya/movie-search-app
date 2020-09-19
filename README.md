@@ -1,5 +1,5 @@
 
-<a href="https://search-omdb.herokuapp.com/"><img src="https://raw.githubusercontent.com/ojenya/test-emphasoft/master/public/preview.png" title="Webim" alt="Webim"></a>
+<a href="https://search-omdb.herokuapp.com/"><img src="https://raw.githubusercontent.com/ojenya/test-emphasoft/master/preview.png" title="Webim" alt="Webim"></a>
 
 1) Верстка должна хорошо смотреться на всех разрешениях от 320px.
 
